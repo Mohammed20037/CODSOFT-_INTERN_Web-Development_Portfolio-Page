@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: Oswald;
+}
+/* body{
+    background: url('https://applemagazine.com/wp-content/uploads/2020/09/AppleMagazine-iPad-Air-Wallpaper-2020-4.png');
+    background-size: 100%;
+    background-position: center;
+} */
+
+nav{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-right: 5%;
+    padding-left: 5%;
+    transition: .3s all;
+}
+h3{
+    color: black;
+    font-size: 28px;
+    cursor: pointer;
+    transition: .3s all;
+}
+span {
+    color: crimson;
+}
+.text{
+    color:coral;
+}
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color: crimson;
+    font-size: 17px;
+    transition: .3s all;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 1.5px;
+    background-color: crimson;
+    margin: auto;
+    display: block;
+}
+nav ul li a:hover::after{
+    width: 100%;
+    background-color: crimson;
+    transition: width .3s linear;
+    margin-top: 2px;
+}
+
+.home{
+    margin-top: 110px;
+    width: 100%;
+}
+.home .main{
+    width: 50%;
+    margin-left: 70px;
+    text-align: center;
+}
+.home .main h1{
+    font-size: 70px;
+    padding-top: 70px;
+    font-family: Righteous;
+}
+.home .main p{
+    font-size: 40px;
+}
+.home .main h3{
+    font-size: 40px;
+}
+.home .main .cv{
+    border: none;
+    font-style: none;
+    background-color: crimson;
+    font-size: 30px;
+    margin-top: 20px;
+    padding: 13px;
+    border-radius: 40px;
+    color: white;
+    cursor: pointer;
+    font-family: Righteous;
+}
+.home .main .cv:hover {
+    background-color:bisque;              /*antiquewhite*/
+    color: crimson;
+    transition: .2s linear;
+}
+.home-images{
+    text-align: right;
+    position: absolute;
+    left: 50%;
+    height: 70%;
+    bottom: 0;
+}
+.home-images img{
+    position: absolute;
+    transform: translateY(-25%);
+    bottom: 0;
+}
+.about {
+    margin-top: 200px;
+}
+.about .container {
+    width: 1100px;
+    height: 550px;
+    margin-top: 200px;
+    margin-right: auto;
+    margin-left: auto;
+/*     margin: 200px auto; */
+    margin-bottom: 70px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+/* .about .glass {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+} */
+.about .container .heading {
+    text-align: center;
+}
+.about .container .heading h2{
+    font-size: 45px;
+}
+.about .container .heading h2::after{
+    content: '';
+    width: 12%;
+    height: 5px;
+    background-color: crimson;
+    display: block;
+    margin-top: -2px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.about .skills h3{
+    margin: 5px;
+    font-family: Righteous;
+}
+.about .skills li{
+    list-style-type: none;
+    margin: 20px 0;
+    padding: 10px;
+}
+.about .skills .bar{
+    display: block;
+    height: 20px;
+    border: 1px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+.about .skills .bar:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.about .skills .bar span{
+    height: 20px;
+    float: left;
+    background: linear-gradient(135deg, rgba(236, 0, 140, 1)0%, rgba(252, 103, 103, 1)100%);
+}
+.about .skills .bar .html {
+    width: 90%;
+    animation: html 3s;
+}
+.about .skills .bar .css {
+    width: 60%;
+    animation: css 3s;
+}
+.about .skills .bar .js {
+    width: 45%;
+    animation: js 3s;
+}
+.about .skills .bar .php {
+    width: 80%;
+    animation: php 3s;
+}
+
+.about .info {
+    margin: auto 100px;
+}
+.about .info h2{
+    font-size: 40px;
+    font-family: Righteous;
+    margin-bottom: 10px;
+}
+.about .info p {
+    margin-top: 2px;
+    font-size: 22px;
+}
+.about .hireBtn{
+    margin-left: 220px;
+    margin-top: 40px;
+    font-family: Righteous;
+    font-size: 30px;
+    border: none;
+    background-color: crimson;
+    color: white;
+    padding: 10px;
+    border-radius: 30px;
+}
+.about .hireBtn:hover {
+    background-color:bisque;              /*antiquewhite*/
+    color: crimson;
+    transition: .2s linear;
+}
+.about .infoImg {
+    position: absolute;
+    text-align: right;
+    margin-right: 80px;
+}
+.about .infoImg img{
+    position: absolute;
+    width: 500px;
+    left: 900px;
+    transform: translateY(-88%);
+}
+.project-content{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.project-content h1{
+    font-size: 60px;
+    padding: 30px;
+}
+.project-content h1::after{
+    content: '';
+    width: 20%;
+    height: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: crimson;
+    display: block;
+}
+.img_box img{
+    width: 100%;
+    height:800px;
+}
+.contactSection {
+    width: 100%;
+    height: 100vh;
+    margin-top: 80px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.contactSection .ContactContainer {
+    /* background: #000; */
+    width: 60%;
+    height: 580px;
+    margin-right: auto;
+    margin-left: auto;
+   /*  border: 2px solid #fff; */
+    border-radius: 40px;
+    box-shadow: 0 10px 32px 0 rgba(0, 0, 0, 0.44);
+}
+.contactSection .ContactContainer .item{
+    background: crimson;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1000;
+    grid-template-columns: repeat(2, 1fr);
+    border-radius: 40px;
+    display: grid;
+}
+.contactSection .ContactContainer .ContactImage {
+    background: #fff;
+}
+.contactSection .ContactContainer .ContactImage img {
+    text-align: center;
+    margin-top: 80px;
+    width: 450px;
+}
+.contactSection .ContactContainer .firstText {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 42px;
+    font-family: Poppins;
+    color: crimson;
+}
+.contactSection .ContactContainer .contactForm {
+    font-family: Poppins;
+    font-size: 20px;
+    color: #fff;
+    margin-top: 30px;
+    margin-left: 10px;
+    text-align: center;
+}
+.contactSection .ContactContainer .contactForm .input-box {
+    margin-top: 50px;
+}
+.contactSection .ContactContainer .contactForm .input-box .name, .contactSection .ContactContainer .contactForm .input-box .email, 
+.contactSection .ContactContainer .contactForm .input-box .phone{
+    border: 2px solid #fff;
+    color: #fff;
+    text-align: center;
+    background: transparent;
+    border-radius: 10px;
+    font-size: 22px;
+    height: 40px;
+    width: 350px;
+    font-family: Poppins;
+}
+.contactSection .ContactContainer .contactForm .input-box label{
+    position: absolute;
+    margin-top:3px;
+    transform: translateX(-280%);
+    transition: .3s;
+}
+.contactSection .ContactContainer .contactForm .input-box .name:focus ~ label, 
+.contactSection .ContactContainer .contactForm .input-box .name:valid ~ label, 
+.contactSection .ContactContainer .contactForm .input-box .name:hover ~ label {
+    margin-top: -9px;
+    margin-left: -130px;
+    font-weight: 500;
+    font-size: 12px;
+    background: crimson;
+    padding: 0 5px;
+}
+.contactSection .ContactContainer .contactForm .input-box .email:focus ~ label, 
+.contactSection .ContactContainer .contactForm .input-box .email:valid ~ label, 
+.contactSection .ContactContainer .contactForm .input-box .email:hover ~ label {
+    margin-top: -9px;
+    margin-left: -130px;
+    font-weight: 500;
+    font-size: 12px;
+    background: crimson;
+    padding: 0 5px;
+}
+.contactSection .ContactContainer .contactForm .input-box .phone:focus ~ label, 
+.contactSection .ContactContainer .contactForm .input-box .phone:valid ~ label, 
+.contactSection .ContactContainer .contactForm .input-box .phone:hover ~ label {
+    margin-top: -9px;
+    margin-left: -120px;
+    font-weight: 500;
+    font-size: 12px;
+    background: crimson;
+    padding: 0 5px;
+}
+
+.submitBtn{
+    margin-top: 65px;
+    font-size: 35px;
+    font-family: Poppins;
+    color: #303030;
+    border: none;
+    background: whitesmoke;
+    width: 200px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.socials {
+    margin-bottom: 30px;
+}
+.socials .social-media 
+{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.socials .social-media a {
+    margin: 0 15px;
+    color: crimson;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes html{
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 90%;
+    }
+}
+@keyframes css{
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 60%;
+    }
+}
+@keyframes js{
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 45%;
+    }
+}
+@keyframes php{
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 80%;
+    }
+}

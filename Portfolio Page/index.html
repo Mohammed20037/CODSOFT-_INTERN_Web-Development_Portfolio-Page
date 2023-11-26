@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.0/css/v4-shims.min.css">
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <title>Portfolio Page</title>
+    <script src="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+"></script>
+<link href="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+" rel="stylesheet">
+
+
+    <style>
+        .my-slider-progress {
+          background: #ccc;
+        }
+        
+        .my-slider-progress-bar {
+          background: greenyellow;
+          height: 2px;
+          transition: width 400ms ease;
+          width: 0;
+        }
+      </style>
+
+
+
+</head>
+<body>
+    <!-------------HEADER---STARTS---HERE--------------------------->
+    <header>
+        <nav>
+            <h3>Mohammed <span>Haitham</span></h3>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <!-- <li><a href="">Social</a></li> -->
+            </ul>
+        </nav>
+    </header>
+    <!------------HEADER---ENDS----HERE----------------------------->
+
+    <!------------HOME----STARTS----HERE----------------------------->
+
+    <section class="home">
+        <div class="main">
+            <h1>Hi, I am <span>Mohammed</span> </h1>
+            <h3>I am a <span class="text"></span></h3>
+            <p>with experience for over 2 Years</p>
+            <button class="cv" type="button" onclick="window.location.href='https://www.linkedin.com/in/mohammed-zamzamy-414b58268/'">Download CV</button>
+
+        </div>
+        <div class="home-images">
+            <img src="Vector.png" alt="">
+        </div>
+    </section>
+
+    <!--------------HOME---------ENDS-------------HERE-->
+
+
+    <!-------------ABOUT-------STARTS---------HERE-->
+
+    <section class="about" id="about">
+        <div class="container">     <!--glass-->
+            <div class="heading">
+                <h2>SKILLS</h2>
+            </div>
+            <div class="skills">
+                <li>
+                    <h3>HTML</h3>
+                    <span class="bar"><span class="html"></span></span>
+                </li>
+                <li>
+                    <h3>CSS</h3>
+                    <span class="bar"><span class="css"></span></span>
+                </li>
+                <li>
+                    <h3>JAVASCRIPT</h3>
+                    <span class="bar"><span class="js"></span></span>
+                </li>
+                <li>
+                    <h3>PHP</h3>
+                    <span class="bar"><span class="php"></span></span>
+                </li>
+            </div>
+        </div>
+        <div class="info">
+            <br>
+            <h3>Hello,</h3>
+            <h2>My name is <span>M</span>ohammed <span>H</span>aitham </h2>
+            
+            <p>I am a Student Currently Pursuing my College Degree of Computer Science<br>
+            From Galala university, Egypt. I create portfolio websites, E-Commerce Websites<br>
+            and I also have Interest in Video Editing, Graphic Designing and Software Development.
+            <br>I am currently <br>
+            Looking for any Jobs or any Internship. If you are willing to take me as an intern<br>
+            or as a Employee contact me through Gmail or LinkedIn.</p>
+
+            <button type="button" class="hireBtn">HIRE ME</button>
+        </div>
+        <div class="infoImg">
+            <img src="Programmer.jpg" alt="">
+        </div>
+    </section>
+    <br><br><br>
+
+    <!-------------ABOUT----------ENDS-----------HERE-->
+
+    <!---------PROJECT----------STARTS-----------HERE-->
+
+
+    <!-- Style the bar as you like -->
+  <div class="project-content">
+    <h1>PROJECTS</h1>
+  </div>
+  <div class="splide">
+    <div class="splide__track">
+      <ul class="splide__list">
+        <li class="splide__slide">
+            <div class="img_box">
+                <img src="IMG1.png" alt="">
+            </div>
+        </li>
+        <li class="splide__slide">
+            <div class="img_box">
+                <img src="IMG2.png" alt="">
+            </div>
+        </li>
+      </ul>
+    </div>
+    
+    <!-- Add the progress bar element -->
+    <div class="my-slider-progress">
+      <div class="my-slider-progress-bar"></div>
+    </div>
+  </div>
+
+
+    <!---------PROJECT-----------ENDS-------------HERE-->
+
+
+    <!-----------CONTACTS-------STARTS-------HERE------------>
+    <section class="contactSection" id="contact">
+        <div class="ContactContainer">
+            <div class="item">
+                <div class="ContactImage">
+                    <div class="firstText">Let's Get in Touch</div>
+                    <img src="Contact-Img.png" alt="">
+                </div>
+                <div class="contactForm">
+                    <h2>Contact Us</h2>
+
+                    <form action="">
+                        <div class="input-box">
+                            <input type="text" class="name" required>
+                            <label class="nameLabel" for="">Enter your Name</label>
+                        </div>
+                        <div class="input-box">
+                            <input type="email" class="email" required>
+                            <label class="emailLabel" for="">Enter your Email</label>
+                        </div>
+                        <div class="input-box">
+                            <input type="tel" class="phone" required>
+                            <label class="phoneLabel" for="">Enter your Phone</label>
+                        </div>
+                        <input type="button" value="SUBMIT" class="submitBtn">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-----------CONTACTS---------ENDS-------------HERE----->
+
+    <section class="socials">
+        <ul class="social-media">
+            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+        </ul>
+    </section> 
+    <script src="main.js"></script>
+</body>
+</html>
